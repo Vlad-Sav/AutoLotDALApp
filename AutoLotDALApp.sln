@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLotDALApp", "AutoLotDAL
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLotTestDrive", "AutoLotTestDrive\AutoLotTestDrive.csproj", "{FAC0E72E-BE9C-4E3D-92B1-483B4BF5D412}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutoLotDALApp.Models", "AutoLotDALApp.Models\AutoLotDALApp.Models.csproj", "{E73B2945-B86B-4C40-9F34-18E84BA66EBB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FAC0E72E-BE9C-4E3D-92B1-483B4BF5D412}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAC0E72E-BE9C-4E3D-92B1-483B4BF5D412}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAC0E72E-BE9C-4E3D-92B1-483B4BF5D412}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E73B2945-B86B-4C40-9F34-18E84BA66EBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E73B2945-B86B-4C40-9F34-18E84BA66EBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E73B2945-B86B-4C40-9F34-18E84BA66EBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E73B2945-B86B-4C40-9F34-18E84BA66EBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

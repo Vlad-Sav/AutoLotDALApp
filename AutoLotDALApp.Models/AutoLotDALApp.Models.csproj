@@ -5,10 +5,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{AD65963E-BA4F-4C4F-B215-BA75577284F4}</ProjectGuid>
+    <ProjectGuid>{E73B2945-B86B-4C40-9F34-18E84BA66EBB}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>AutoLotDALApp</RootNamespace>
-    <AssemblyName>AutoLotDALApp</AssemblyName>
+    <RootNamespace>AutoLotDALApp.Models</RootNamespace>
+    <AssemblyName>AutoLotDALApp.Models</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -48,7 +48,6 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -57,40 +56,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EF\AutoLotEntities.cs" />
-    <Compile Include="EF\MyDataInitializer.cs" />
-    <Compile Include="Interception\ConsoleWriterInterceptor.cs" />
-    <Compile Include="Migrations\202201100641132_Initial.cs" />
-    <Compile Include="Migrations\202201100641132_Initial.designer.cs">
-      <DependentUpon>202201100641132_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202201100741230_Final.cs" />
-    <Compile Include="Migrations\202201100741230_Final.designer.cs">
-      <DependentUpon>202201100741230_Final.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Repos\BaseRepo.cs" />
+    <Compile Include="Base\EntityBase.cs" />
+    <Compile Include="CreditRisk.cs" />
+    <Compile Include="Customers.cs" />
+    <Compile Include="Inventory.cs" />
+    <Compile Include="InventoryPartial.cs" />
+    <Compile Include="Orders.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repos\InventoryRepo.cs" />
-    <Compile Include="Repos\IRepo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202201100641132_Initial.resx">
-      <DependentUpon>202201100641132_Initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202201100741230_Final.resx">
-      <DependentUpon>202201100741230_Final.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AutoLotDALApp.Models\AutoLotDALApp.Models.csproj">
-      <Project>{e73b2945-b86b-4c40-9f34-18e84ba66ebb}</Project>
-      <Name>AutoLotDALApp.Models</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
